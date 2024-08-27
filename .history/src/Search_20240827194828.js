@@ -5,7 +5,7 @@ import axios from 'axios';
 export default function Search(){
     let [word, setWord] = useState('fountain');
 
-    let apiUrl =  `https://api.shecodes.io/dictionary/v1/define?word=${word}&key=03aa5321feb0a48eoca7a4tede1f2bb1`;
+    let apiUrl =  `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
     axios.get(apiUrl).then(handleResponse);
 
     function handleResponse(response){
