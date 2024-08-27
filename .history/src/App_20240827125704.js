@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="App">
       {/* Logo */}
-      <div className='logo m-3 d-flex align-items-center'>
-        <img src="https://th.bing.com/th/id/R.1ebe3e38406a8906121c9769e62adc3e?rik=d1hISy0qiMJ7Hg&pid=ImgRaw&r=0" alt="Logo" className='mx-3'/>
+      <div className='logo m-3 d-flex'>
+        <img src="https://th.bing.com/th/id/R.1ebe3e38406a8906121c9769e62adc3e?rik=d1hISy0qiMJ7Hg&pid=ImgRaw&r=0" alt="Logo"/>
         <h4>Dictionary</h4>
       </div>
       
