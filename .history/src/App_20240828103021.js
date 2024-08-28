@@ -2,6 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
 import Search from "./Search"
+import Result from "./Result"
 
 function App() {
   return (
@@ -12,8 +13,18 @@ function App() {
         <h4>Dictionary</h4>
       </div>
       
-      <div className='container'>
-        <Search />
+      <div className='container d-flex m-3 mx-5'>
+        {/* Header */}
+        <div className="header">
+          <h3>What do you want to look up?</h3>
+          <Search />
+        </div>
+
+        {/* Content */}
+        <div className="content mx-5" >
+          <Result />
+        </div>
+
       </div>
     </div>
   );

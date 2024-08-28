@@ -16,7 +16,8 @@ export default function Search(){
 
     function handleResponse(response){
         console.log(response.data)
-        setResult(response.data);
+        setResult(response.data.meanings);
+        console.log(response.data.meanings);
     }
 
     function handleSubmit(event){
@@ -37,7 +38,7 @@ export default function Search(){
                         <input type="submit" value="Search" className="btn btn-danger m-2"/>
                     </form>
                     <div className="meaning">
-                        <Result result={result}/>
+                        <Result result={result} word={word}/>
                     </div>
                 </div>
                 <div className="col-5">

@@ -16,7 +16,8 @@ export default function Search(){
 
     function handleResponse(response){
         console.log(response.data)
-        setResult(response.data);
+        setResult(response.data.meanings);
+        console.log(response.data.meanings);
     }
 
     function handleSubmit(event){

@@ -13,7 +13,10 @@ function App() {
       </div>
       
       <div className='container'>
-        <Search />
+        {/* Header */}
+        <div className="header">
+          <Search />
+        </div>
       </div>
     </div>
   );
