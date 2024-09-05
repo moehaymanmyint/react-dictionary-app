@@ -5,17 +5,16 @@ import Results from "./Results"
 
 export default function Search(){
     let [word, setWord] = useState('');
-    let [results, setResult] = useState(null);
+    let [results, setResult] = useState();
 
     function handleResponse(response){
-        console.log(response.data[0]);
-        setResult(response.data[0])
+        console.log(response.data);
+        setResult(response.data)
     }
     
     function handleSubmit(event){
         event.preventDefault();
 
-        //API
         let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${word}`;
         axios.get(apiUrl).then(handleResponse);
     }
