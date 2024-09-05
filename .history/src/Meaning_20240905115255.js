@@ -7,7 +7,8 @@ export default function Meaning(props){
             <h3>{props.meaning.partOfSpeech}</h3>
             <p><strong>Definitions:</strong> {props.meaning.definition}</p>
             <p><strong>Examples:</strong> {props.meaning.example}</p>
-            <Synonyms synonyms={props.meaning.synonyms}/>
+            {props.meanings.synonyms}
+            <Synonyms synonyms={props.meanings.synonyms}/>
         </div>
     )
 }

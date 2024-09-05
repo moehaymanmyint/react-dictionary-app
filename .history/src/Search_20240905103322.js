@@ -2,14 +2,11 @@ import React, {useState} from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 import axios from "axios";
 import Results from "./Results"
-
 export default function Search(){
     let [word, setWord] = useState('');
-    let [results, setResult] = useState();
-
+    
     function handleResponse(response){
         console.log(response.data);
-        setResult(response.data)
     }
     
     function handleSubmit(event){
@@ -33,7 +30,7 @@ export default function Search(){
                         <input type="submit" value="Search" className="btn btn-danger m-2"/>
                     </form>
                     <div className="meaning">
-                        <Results results={results}/>
+                        <Results />
                     </div>
                 </div>
                 <div className="col-5">

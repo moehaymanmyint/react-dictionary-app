@@ -5,7 +5,7 @@ import Results from "./Results"
 
 export default function Search(){
     let [word, setWord] = useState('');
-    let [results, setResult] = useState();
+    let [results, setResult] = useState({});
 
     function handleResponse(response){
         console.log(response.data);
