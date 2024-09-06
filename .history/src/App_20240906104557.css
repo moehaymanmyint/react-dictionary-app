@@ -1,0 +1,7 @@
+.App img{
+    width: 50px;
+}
+
+.App{
+    background: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}

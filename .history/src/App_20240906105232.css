@@ -1,0 +1,17 @@
+.App img{
+    width: 50px;
+}
+
+.App {
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aqua;
+    margin: 0; 
+}
+
+
+
+

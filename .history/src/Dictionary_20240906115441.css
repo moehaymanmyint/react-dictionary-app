@@ -1,0 +1,20 @@
+
+.Results .box,
+.Meaning{
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+
+h2{
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+p{
+    font-size: 18px;
+}
+
+.Search .btn{
+    background: linear-gradient(99.6deg, rgb(112, 128, 152) 10.6%, rgb(242, 227, 234) 32.9%, rgb(234, 202, 213) 52.7%, rgb(220, 227, 239) 72.8%, rgb(185, 205, 227) 81.1%, rgb(154, 180, 212) 102.4%);
+}

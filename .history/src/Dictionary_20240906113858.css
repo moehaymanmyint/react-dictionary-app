@@ -1,0 +1,17 @@
+.Search section {
+    background-color: white;
+}
+
+.Results .box,
+.Meaning{
+    background-color: linear-gradient(to top, #dfe9f3 0%, white 100%);;
+}
+
+h2{
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+p{
+    font-size: 18px;
+}

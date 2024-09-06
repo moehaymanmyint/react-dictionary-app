@@ -1,0 +1,12 @@
+.Search section {
+    background-color: white;
+}
+
+.Results .box,
+.Meaning{
+    background-color: antiquewhite;
+}
+
+h2{
+    font-size: 100px;
+}
