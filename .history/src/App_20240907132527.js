@@ -15,6 +15,7 @@ function App() {
       <div className='container'>
         <Search />
       </div>
+      <Footer />
     </div>
   );
 }

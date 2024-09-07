@@ -2,6 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
 import Search from "./Search"
+import Footer from './Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <div className='container'>
         <Search />
       </div>
+      <Footer />
     </div>
   );
 }
