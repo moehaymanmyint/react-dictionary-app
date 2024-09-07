@@ -46,13 +46,13 @@ export default function Search(){
                         <input type="submit" value="Search" className="btn btn-lg m-1"/>
                     </form>
             <div className="row d-flex">
-                <div className="col-7">
+                <div className="col-6">
                     <em className="mx-2">Suggested words: rain, sunset, night & etc...</em>
                     <section className="meaning">
                         <Results results={results}/>
                     </section>
                 </div>
-                <div className="col-5 mt-5">
+                <div className="col-6 mt-2">
                     <Photos photos={photos} />
                 </div>
             </div>

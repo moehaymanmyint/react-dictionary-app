@@ -39,20 +39,20 @@ export default function Search(){
     }
 
     return (
-        <div className="Search">
+        <div className="Search w-75">
             <h1 className="my-4 mb-5 text-center">What do you want to look up?</h1>
             <form onSubmit={handleSubmit} className="d-flex">
                         <input type="search" className="form-control form-control-lg m-1" value={word} onChange={updateWord} placeholder="Search a word..."/>
                         <input type="submit" value="Search" className="btn btn-lg m-1"/>
                     </form>
             <div className="row d-flex">
-                <div className="col-7">
+                <div className="col-6">
                     <em className="mx-2">Suggested words: rain, sunset, night & etc...</em>
                     <section className="meaning">
                         <Results results={results}/>
                     </section>
                 </div>
-                <div className="col-5 mt-5">
+                <div className="col-6 mt-5">
                     <Photos photos={photos} />
                 </div>
             </div>
