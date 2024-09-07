@@ -31,10 +31,10 @@ export default function Search(){
         let header = { Authorization: `${imageApiKey}` };
         axios.get(imgApiUrl, { headers: header }).then(handleImageResponse);
     }
-
+    
     useEffect(() => {
         searchWord();  
-    }, []);
+    }, [word]);
 
     function handleSubmit(event){
         event.preventDefault();
@@ -47,7 +47,7 @@ export default function Search(){
 
     return (
         <div className="Search">
-            <h1 className="my-3 mb-5 text-center">What do you want to look up?</h1>
+            <h1 className="my-4 mb-5 text-center">What do you want to look up?</h1>
             <div className="row d-flex">
                 <div className="col-6">
                     <form onSubmit={handleSubmit} className="d-flex">

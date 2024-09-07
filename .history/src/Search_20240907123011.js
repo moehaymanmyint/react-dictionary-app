@@ -20,25 +20,22 @@ export default function Search(){
         setPhotos(response.data.photos);
     }
     
-    function searchWord(){
-        // Dictionary API
-        let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${word}`;
-        axios.get(apiUrl).then(handleDictionaryResponse);
-
-        // Image API
-        let imageApiKey = "YjZHrFtqi0MmsvmCsjW9BM3SiR7Xv5HUozz9pPxEQ26WQPC6FFlQBqaO";
-        let imgApiUrl = `https://api.pexels.com/v1/search?query=${word}`;
-        let header = { Authorization: `${imageApiKey}` };
-        axios.get(imgApiUrl, { headers: header }).then(handleImageResponse);
-    }
-
     useEffect(() => {
         searchWord();  
     }, []);
 
     function handleSubmit(event){
         event.preventDefault();
-        searchWord();
+
+        //Dictionary API
+        let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${word}`;
+        axios.get(apiUrl).then(handleDictionaryResponse);
+
+        //Image APT
+        let imgaeApiKey = "YjZHrFtqi0MmsvmCsjW9BM3SiR7Xv5HUozz9pPxEQ26WQPC6FFlQBqaO";
+        let imgApiUrl = `https://api.pexels.com/v1/search?query=${word}`;
+        let header = { Authorization: `${imgaeApiKey}` };
+        axios.get(imgApiUrl, { headers: header }).then(handleImageResponse);
     }
 
     function updateWord(event){
@@ -47,7 +44,7 @@ export default function Search(){
 
     return (
         <div className="Search">
-            <h1 className="my-3 mb-5 text-center">What do you want to look up?</h1>
+            <h1 className="my-4 mb-5 text-center">What do you want to look up?</h1>
             <div className="row d-flex">
                 <div className="col-6">
                     <form onSubmit={handleSubmit} className="d-flex">

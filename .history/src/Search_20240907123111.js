@@ -38,6 +38,7 @@ export default function Search(){
 
     function handleSubmit(event){
         event.preventDefault();
+
         searchWord();
     }
 
@@ -47,7 +48,7 @@ export default function Search(){
 
     return (
         <div className="Search">
-            <h1 className="my-3 mb-5 text-center">What do you want to look up?</h1>
+            <h1 className="my-4 mb-5 text-center">What do you want to look up?</h1>
             <div className="row d-flex">
                 <div className="col-6">
                     <form onSubmit={handleSubmit} className="d-flex">

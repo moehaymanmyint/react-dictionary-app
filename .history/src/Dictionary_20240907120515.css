@@ -26,8 +26,11 @@ p{
 
 .Photos img{
     width: 100%;
-    border-radius: 8px;
 }
 
-
+.Photos .row{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
 

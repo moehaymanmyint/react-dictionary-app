@@ -26,8 +26,9 @@ p{
 
 .Photos img{
     width: 100%;
-    border-radius: 8px;
 }
 
-
+.Photos .row{
+    display: grid;
+}
 
